@@ -471,6 +471,31 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form-mail">
+            <p class="footer-title">підпишіться на розсилку</p>
+            <form
+              class="footer-form-wrapper"
+              name="mail_form"
+              autocomplete="on"
+              novalidate
+            >
+              <label>
+                <input
+                  class="footer-input-mail"
+                  type="email"
+                  name="email"
+                  autofocus
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="button button-form-mail" type="submit">
+                Підписатися
+                <svg aria-label="іконка телеграму" class="icon-footer-telegram">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </footer>
 
@@ -481,6 +506,67 @@
               <use href="./images/sprite.svg#icon-close-button"></use>
             </svg>
           </button>
+          <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="modal-form-container">
+            <label class="modal-form-label">
+              <span class="modal-form-name">Ім'я</span>
+              <span class="modal-input-wrapper">
+                <input class="contact-form-input" type="text" name="name" />
+                <svg aria-label="іконка чоловічка" class="modal-form-icon">
+                  <use href="./images/sprite.svg#modal-icon-person"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-label">
+              <span class="modal-form-name">Телефон</span>
+              <span class="modal-input-wrapper">
+                <input class="contact-form-input" type="tel" name="tel" />
+                <svg aria-label="іконка телефону" class="modal-form-icon">
+                  <use href="./images/sprite.svg#modal-icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-label">
+              <span class="modal-form-name">Пошта</span>
+              <span class="modal-input-wrapper">
+                <input class="contact-form-input" type="email" name="email" />
+                <svg aria-label="іконка пошти" class="modal-form-icon">
+                  <use href="./images/sprite.svg#modal-icon-email"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-label-textarea">
+              <span class="modal-form-name">Коментар</span>
+              <textarea
+                class="contact-form-textarea"
+                name="feedback"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+            <label class="modal-form-label-checkbox">
+              <input
+                type="checkbox"
+                class="modal-form-input-checkbox"
+                name="user-policy"
+                required
+              />
+              <svg class="icon-accept-policy-wrapper">
+                <use
+                  class="modal-icon-accept-policy"
+                  href="./images/sprite.svg#icon-accept-policy"
+                ></use>
+              </svg>
+              <span class="modal-form-checkbox-text"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="" class="modal-form-checkbox-link"
+                  >Умови договору</a
+                ></span
+              >
+            </label>
+            <button class="modal-form-button button" type="submit">
+              Відправити
+            </button>
+          </form>
         </div>
       </div>
     </main>
